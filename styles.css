@@ -1,0 +1,84 @@
+:root{--bg:#06080f;--panel:#0a0f1f;--panel-2:#0f172a;--text:#e6ecff;--muted:#a3b5d9;--brand:#0b6bff;--brand-2:#64a8ff;--ok:#10b981;--card:#0b1022;--ring:rgba(11,107,255,.3)}*{box-sizing:border-box}html,body{margin:0;padding:0}body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:radial-gradient(1200px 800px at 15% -10%,#0b6bff22,transparent),radial-gradient(1000px 700px at 80% 10%,#64a8ff1a,transparent),var(--bg);color:var(--text);line-height:1.6}
+.container{max-width:1080px;margin:0 auto;padding:0 20px}
+.site-header{position:sticky;top:0;z-index:50;backdrop-filter:saturate(1.2) blur(10px);background:linear-gradient(180deg,rgba(6,8,15,.8),rgba(6,8,15,.5));border-bottom:1px solid #ffffff12}
+.site-header .brand{display:flex;align-items:center;gap:.6rem;color:var(--text);text-decoration:none;font-weight:700;letter-spacing:.3px}
+.site-header .brand .logo{width:22px;height:22px;fill:var(--brand)}
+.site-header nav{display:flex;align-items:center;gap:1rem}
+.site-header nav a{color:var(--muted);text-decoration:none;padding:.5rem .25rem}
+.site-header nav a:hover{color:var(--text)}
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
+
+.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center;padding:80px 20px}
+.hero .hero-content{padding-left:20px}
+.hero h1{font-size:clamp(28px,4vw,48px);line-height:1.15;margin:0 0 10px;letter-spacing:.2px}
+.subtitle{color:var(--muted);margin:0 0 18px}
+.usp{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 18px;padding:0;margin:0 0 24px;list-style:none}
+.usp li{color:#d3e2ff}
+.cta{display:flex;gap:12px;align-items:center}
+.btn{appearance:none;border:1px solid #ffffff1f;background:#0a0f1f;color:var(--text);padding:10px 14px;border-radius:10px;cursor:pointer;transition:.2s ease all}
+.btn:hover{border-color:#ffffff3a;transform:translateY(-1px)}
+.btn-primary{background:linear-gradient(180deg,var(--brand),var(--brand-2));border:none;color:white;font-weight:600}
+.btn-ghost{background:transparent;border-color:#ffffff3a}
+.btn-small{padding:8px 10px;border-radius:8px}
+.hero-art{height:380px;border:1px solid #ffffff12;border-radius:16px;background:radial-gradient(500px 300px at 20% 10%,#0b6bff33,transparent),radial-gradient(400px 280px at 80% 20%,#64a8ff33,transparent),linear-gradient(135deg,#0a0f1f,#0f172a);position:relative;overflow:hidden}
+.hero-art:before,.hero-art:after{content:"";position:absolute;border-radius:50%;filter:blur(40px);opacity:.7}
+.hero-art:before{width:220px;height:220px;background:#0b6bff33;top:40px;left:40px}
+.hero-art:after{width:280px;height:280px;background:#64a8ff2a;bottom:20px;right:20px}
+
+.format{padding:28px 0}
+.format-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.card{background:linear-gradient(180deg,var(--card),#0a0f1f);border:1px solid #ffffff12;border-radius:12px;padding:18px;text-align:center}
+.kpi{font-weight:800;font-size:28px;color:white}
+.kpi-label{color:var(--muted)}
+
+.programme{padding:30px 0}
+.programme h2{margin-bottom:10px}
+.trimester{margin:26px 0;padding:18px;border:1px solid #ffffff12;border-radius:12px;background:linear-gradient(180deg,#0a0f1f,#0a0f1f00)}
+.objective{color:var(--muted);margin-top:-6px}
+.days{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;list-style:none;padding:0;margin:10px 0 0}
+.days li{border:1px solid #ffffff12;border-radius:12px;padding:12px;background:linear-gradient(180deg,#0b1022,#0a0f1f)}
+.days h4{margin:0 0 8px;color:#e9f1ff}
+.days ul{margin:0;padding-left:18px}
+
+.proof{padding:12px 0 30px}
+.proof-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.proof-item{border:1px solid #ffffff12;border-radius:12px;padding:14px;background:linear-gradient(180deg,#0b1022,#0a0f1f)}
+.proof-item h4{margin:0 0 6px}
+
+.faq{padding:20px 0 60px}
+.faq details{border:1px solid #ffffff12;border-radius:12px;padding:12px;background:linear-gradient(180deg,#0b1022,#0a0f1f);margin:10px 0}
+.faq summary{cursor:pointer;font-weight:600}
+
+.site-footer{border-top:1px solid #ffffff12;background:linear-gradient(180deg,rgba(6,8,15,.3),rgba(6,8,15,.8));padding:16px 0;margin-top:20px}
+.site-footer .container{display:flex;align-items:center;justify-content:space-between}
+.site-footer .brand{display:flex;align-items:center;gap:.5rem;color:var(--text);text-decoration:none;font-weight:700}
+.site-footer .brand .logo{width:18px;height:18px;fill:var(--brand)}
+.site-footer .right{display:flex;align-items:center;gap:12px}
+.site-footer .right a{color:var(--muted);text-decoration:none}
+
+.modal{border:none;border-radius:16px;padding:0;background:transparent}
+.modal::backdrop{background:rgba(0,0,0,.6);backdrop-filter:blur(2px)}
+.modal-content{width:min(620px,92vw);border:1px solid #ffffff22;border-radius:16px;padding:16px;background:linear-gradient(180deg,#0b1022,#0a0f1f);box-shadow:0 10px 40px #00000066}
+.modal-content header{display:flex;align-items:center;justify-content:space-between}
+.modal-content .icon{background:transparent;border:none;color:var(--muted);cursor:pointer;font-size:18px}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field:has(input:focus),.field:has(textarea:focus){outline:2px solid var(--ring);outline-offset:2px;border-radius:8px;padding:6px}
+label{font-size:14px;color:#cfe1ff}
+input,textarea{background:#0a0f1f;border:1px solid #ffffff1f;border-radius:10px;color:var(--text);padding:10px 12px;font:inherit}
+input:focus,textarea:focus{border-color:#ffffff3a;outline:none}
+.modal-content footer{display:flex;justify-content:flex-end;gap:10px;margin-top:8px}
+.privacy{color:var(--muted);font-size:12px;margin:8px 2px}
+
+.cta.wide{display:flex;flex-direction:column;align-items:center;margin-top:16px}
+.note{color:var(--muted);margin:6px 0 0}
+
+@media (max-width: 980px){
+  .hero{grid-template-columns:1fr;gap:20px;padding:48px 16px}
+  .hero .hero-content{padding-left:0}
+  .usp{grid-template-columns:1fr}
+  .format-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .days{grid-template-columns:1fr}
+  .proof-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .fields{grid-template-columns:1fr}
+}
